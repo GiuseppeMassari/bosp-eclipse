@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="BOSPcategory"
+            name="BOSP">
+      </category>
+      <wizard
+            category="BOSPcategory"
+            class="bosp_plugin.wizard.BOSPwizard"
+            icon="src/bosp_plugin/image/BarbequeLogo_lit.png"
+            id="BOSP.wizards.BOSPwizard"
+            name="BarbequeRTRM Application"
+            project="true">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="bosp_plugin.preference.BOSPPreferencePage"
+            id="Barbeque_Plugin.preferencePage"
+            name="BOSP Preference">
+      </page>
+   </extension>
+
+</plugin>
